@@ -1,6 +1,6 @@
 # amazonlive
 
-A new Flutter project.
+flutter nodejs fullstack project with use of http
 
 ## Getting Started
 
