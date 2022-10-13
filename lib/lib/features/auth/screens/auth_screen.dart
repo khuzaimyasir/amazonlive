@@ -1,8 +1,13 @@
-import 'package:amazon_clone_tutorial/common/widgets/custom_button.dart';
-import 'package:amazon_clone_tutorial/common/widgets/custom_textfield.dart';
-import 'package:amazon_clone_tutorial/constants/global_variables.dart';
-import 'package:amazon_clone_tutorial/features/auth/services/auth_service.dart';
+// import 'package:amazon_clone_tutorial/common/widgets/custom_button.dart';
+// import 'package:amazon_clone_tutorial/common/widgets/custom_textfield.dart';
+// import 'package:amazon_clone_tutorial/constants/global_variables.dart';
+// import 'package:amazon_clone_tutorial/features/auth/services/auth_service.dart';
 import 'package:flutter/material.dart';
+
+import '../../../common/widgets/custom_button.dart';
+import '../../../common/widgets/custom_textfield.dart';
+import '../../../constants/global_variables.dart';
+import '../services/auth_service.dart';
 
 enum Auth {
   signin,

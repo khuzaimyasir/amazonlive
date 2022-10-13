@@ -1,9 +1,11 @@
-import 'package:amazon_clone_tutorial/common/widgets/loader.dart';
-import 'package:amazon_clone_tutorial/features/account/widgets/single_product.dart';
-import 'package:amazon_clone_tutorial/features/admin/screens/add_product_screen.dart';
-import 'package:amazon_clone_tutorial/features/admin/services/admin_services.dart';
-import 'package:amazon_clone_tutorial/models/product.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../../common/widgets/loader.dart';
+import '../../../models/product.dart';
+import '../../account/widgets/single_product.dart';
+import '../services/admin_services.dart';
+import 'add_product_screen.dart';
 
 class PostsScreen extends StatefulWidget {
   const PostsScreen({Key? key}) : super(key: key);

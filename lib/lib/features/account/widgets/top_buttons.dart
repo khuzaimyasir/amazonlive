@@ -1,6 +1,8 @@
-import 'package:amazon_clone_tutorial/features/account/services/account_services.dart';
-import 'package:amazon_clone_tutorial/features/account/widgets/account_button.dart';
+
 import 'package:flutter/material.dart';
+
+import '../services/account_services.dart';
+import 'account_button.dart';
 
 class TopButtons extends StatelessWidget {
   const TopButtons({Key? key}) : super(key: key);

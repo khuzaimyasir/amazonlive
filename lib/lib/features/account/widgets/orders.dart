@@ -1,10 +1,12 @@
-import 'package:amazon_clone_tutorial/common/widgets/loader.dart';
-import 'package:amazon_clone_tutorial/constants/global_variables.dart';
-import 'package:amazon_clone_tutorial/features/account/services/account_services.dart';
-import 'package:amazon_clone_tutorial/features/account/widgets/single_product.dart';
-import 'package:amazon_clone_tutorial/features/order_details/screens/order_details.dart';
-import 'package:amazon_clone_tutorial/models/order.dart';
+
+import 'package:amazonlive/lib/features/account/widgets/single_product.dart';
 import 'package:flutter/material.dart';
+
+import '../../../common/widgets/loader.dart';
+import '../../../constants/global_variables.dart';
+import '../../../models/order.dart';
+import '../../order_details/screens/order_details.dart';
+import '../services/account_services.dart';
 
 class Orders extends StatefulWidget {
   const Orders({Key? key}) : super(key: key);

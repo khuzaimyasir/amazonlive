@@ -1,10 +1,12 @@
-import 'package:amazon_clone_tutorial/constants/global_variables.dart';
-import 'package:amazon_clone_tutorial/features/home/widgets/address_box.dart';
-import 'package:amazon_clone_tutorial/features/home/widgets/carousel_image.dart';
-import 'package:amazon_clone_tutorial/features/home/widgets/deal_of_day.dart';
-import 'package:amazon_clone_tutorial/features/home/widgets/top_categories.dart';
-import 'package:amazon_clone_tutorial/features/search/screens/search_screen.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../../constants/global_variables.dart';
+import '../../search/screens/search_screen.dart';
+import '../widgets/address_box.dart';
+import '../widgets/carousel_image.dart';
+import '../widgets/deal_of_day.dart';
+import '../widgets/top_categories.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = '/home';

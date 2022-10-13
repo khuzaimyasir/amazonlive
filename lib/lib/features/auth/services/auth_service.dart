@@ -1,15 +1,17 @@
 import 'dart:convert';
 
-import 'package:amazon_clone_tutorial/common/widgets/bottom_bar.dart';
-import 'package:amazon_clone_tutorial/constants/error_handling.dart';
-import 'package:amazon_clone_tutorial/constants/global_variables.dart';
-import 'package:amazon_clone_tutorial/constants/utils.dart';
-import 'package:amazon_clone_tutorial/models/user.dart';
-import 'package:amazon_clone_tutorial/providers/user_provider.dart';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../../common/widgets/bottom_bar.dart';
+import '../../../constants/error_handling.dart';
+import '../../../constants/global_variables.dart';
+import '../../../constants/utils.dart';
+import '../../../models/user.dart';
+import '../../../providers/user_provider.dart';
 
 class AuthService {
   // sign up user

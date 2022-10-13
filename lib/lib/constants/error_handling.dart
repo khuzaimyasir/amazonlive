@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:amazon_clone_tutorial/constants/utils.dart';
+// import 'package:amazon_clone_tutorial/constants/utils.dart';
+import 'package:amazonlive/lib/constants/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

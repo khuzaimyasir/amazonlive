@@ -1,11 +1,15 @@
-import 'package:amazon_clone_tutorial/common/widgets/loader.dart';
-import 'package:amazon_clone_tutorial/features/account/widgets/single_product.dart';
-import 'package:amazon_clone_tutorial/features/admin/services/admin_services.dart';
-import 'package:amazon_clone_tutorial/features/order_details/screens/order_details.dart';
-import 'package:amazon_clone_tutorial/models/order.dart';
+// import 'package:amazon_clone_tutorial/common/widgets/loader.dart';
+// import 'package:amazon_clone_tutorial/features/account/widgets/single_product.dart';
+// import 'package:amazon_clone_tutorial/features/admin/services/admin_services.dart';
+// import 'package:amazon_clone_tutorial/features/order_details/screens/order_details.dart';
+// import 'package:amazon_clone_tutorial/models/order.dart';
 import 'package:flutter/material.dart';
 
 import '../../../common/widgets/loader.dart';
+import '../../../models/order.dart';
+import '../../account/widgets/single_product.dart';
+import '../../order_details/screens/order_details.dart';
+import '../services/admin_services.dart';
 
 class OrdersScreen extends StatefulWidget {
   const OrdersScreen({Key? key}) : super(key: key);

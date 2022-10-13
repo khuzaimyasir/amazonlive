@@ -1,11 +1,13 @@
-import 'package:amazon_clone_tutorial/common/widgets/loader.dart';
-import 'package:amazon_clone_tutorial/constants/global_variables.dart';
-import 'package:amazon_clone_tutorial/features/home/widgets/address_box.dart';
-import 'package:amazon_clone_tutorial/features/product_details/screens/product_details_screen.dart';
-import 'package:amazon_clone_tutorial/features/search/services/search_services.dart';
-import 'package:amazon_clone_tutorial/features/search/widget/searched_product.dart';
-import 'package:amazon_clone_tutorial/models/product.dart';
+
+import 'package:amazonlive/lib/constants/global_variables.dart';
 import 'package:flutter/material.dart';
+
+import '../../../common/widgets/loader.dart';
+import '../../../models/product.dart';
+import '../../home/widgets/address_box.dart';
+import '../../product_details/screens/product_details_screen.dart';
+import '../services/search_services.dart';
+import '../widget/searched_product.dart';
 
 class SearchScreen extends StatefulWidget {
   static const String routeName = '/search-screen';
@@ -30,10 +32,15 @@ class _SearchScreenState extends State<SearchScreen> {
   }
 
   fetchSearchedProduct() async {
-    products = await searchServices.fetchSearchedProduct(
-        context: context, searchQuery: widget.searchQuery);
+    products = (await searchServices.fetchSearchedProduct(
+        context: context, searchQuery: widget.searchQuery)).cast<Product>();
     setState(() {});
   }
+  //   fetchSearchedProduct() async {
+  //   products = await searchServices.fetchSearchedProduct(
+  //       context: context, searchQuery: widget.searchQuery);
+  //   setState(() {});
+  // }
 
   void navigateToSearchScreen(String query) {
     Navigator.pushNamed(context, SearchScreen.routeName, arguments: query);
